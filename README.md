@@ -1,14 +1,24 @@
+# Short Link 🔗
+Short Link is a Node.js project that allows users to shorten URLs, redirect to the original URL, and analyze the number of accesses.
+
+### Installation
+To install all dependencies, run the following command:
 ```bash
 npm install
 ```
-to install all dependencies
 
+### Setting Up Docker
+Short Link uses PostgreSQL and Redis databases. To set up the Docker images for these databases, run the following command:
 ```bash
 docker compose up -d
 ```
-to upload the docker images of postgres and redis
+To confirm if the Docker containers are running, execute:
+```bash
+docker ps
+```
 
+### Database Initialization
+To create the PostgreSQL database, execute:
 ```bash
 npm run setup
 ```
-to create the postgres database
